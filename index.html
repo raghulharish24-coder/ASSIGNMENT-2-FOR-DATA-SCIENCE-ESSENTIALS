@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0B0F14" />
+    <meta name="description" content="A focused aptitude assessment with clear, actionable performance analysis across four core domains." />
+    <title>Aptitude Index | Assessment Analysis</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#main" data-action="go-home" aria-label="Aptitude Index home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 36 36" fill="none"><path d="M6 27.5 16.7 7.8c.6-1.1 2.1-1.1 2.7 0L30 27.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/><path d="M11 20.8h14M14.7 14h6.6" stroke="currentColor" stroke-width="2.4"/><circle cx="18" cy="28" r="2.1" fill="currentColor"/></svg>
+          </span>
+          <span class="brand-copy"><strong>aptitude<span>index</span></strong><small>ASSESSMENT LAB</small></span>
+        </a>
+        <div class="header-status"><span class="status-dot"></span><span>DEMO ASSESSMENT</span><span class="header-divider"></span><span>NO ACCOUNT REQUIRED</span></div>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section id="homeScreen" class="screen" aria-labelledby="home-title"></section>
+      <section id="testScreen" class="screen" aria-labelledby="test-title" hidden></section>
+      <section id="resultScreen" class="screen" aria-labelledby="results-title" hidden></section>
+    </main>
+
+    <footer id="siteFooter" class="site-footer">
+      <div class="footer-inner">
+        <a class="footer-brand" href="#main" data-action="go-home">aptitude<span>index</span></a>
+        <p>A focused sample assessment. A clearer next step.</p>
+        <span class="footer-note">COLLEGE PROJECT DEMO <span aria-hidden="true">·</span> RESULTS CALCULATED LOCALLY</span>
+      </div>
+    </footer>
+
+    <div id="modalRoot"></div>
+    <div id="liveRegion" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
